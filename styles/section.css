@@ -26,6 +26,12 @@
       position: absolute;
       bottom:0;
       padding: 24px;
+      
+      /* Basicamente o figcaption olha pra ele mesmo e verifica se tem alguma classe .text-lg, 
+      e se tiver eu aplico o padding de 12px */
+      &:has(.text-lg){
+        padding: 12px;
+      }
 
       h2{
         margin-top: 8px;
