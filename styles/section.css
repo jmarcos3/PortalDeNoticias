@@ -2,6 +2,34 @@
   img{
     height: 100%;
     object-fit: cover;
+  }
+  
+  .card{
     border-radius: 4px;
+    /* O overflow é resposanvel por esconder tudo que "passa" da caixa */
+    overflow: hidden;
+    position: relative;
+    /* Esse before é basicamente para por o gradiente no fundo */
+    &::before{
+      content: "";
+      position: absolute;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+      inset: 0;
+      top: 50%; /* Começa a partir do meio*/
+    }
+
+    figcaption{
+      position: absolute;
+      bottom:0;
+      padding: 24px;
+
+      h2{
+        margin-top: 8px;
+      }
+    }
   }
 }
