@@ -33,3 +33,7 @@
 .text-sm{
   font: var(--text-sm);
 }
+
+.text{
+  font: var(--text)
+}
