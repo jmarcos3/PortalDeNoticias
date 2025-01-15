@@ -112,10 +112,11 @@ section{
 
 aside{
   grid-area: aside;
+  margin-bottom: 8px;
 }
 
 #more{
-  margin-top: 32px;
+  margin-top: 24px;
   
   img{
     width: 72px;
